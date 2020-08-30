@@ -20,4 +20,8 @@ public class Book {
     public String getNameOfTheBook() {
         return nameOfTheBook;
     }
+
+    public void setNameOfTheBook(String nameOfTheBook) {
+        this.nameOfTheBook = nameOfTheBook;
+    }
 }

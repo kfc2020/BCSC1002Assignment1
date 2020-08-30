@@ -7,5 +7,5 @@
 package definitions;
 
 public class Library {
-
+    public Book[] allTheBooksThatAreCurrentlyAvailable;
 }

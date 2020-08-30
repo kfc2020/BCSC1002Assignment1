@@ -32,4 +32,8 @@ public class Book {
     public void setNameOfTheAuthorOfTheBook(String nameOfTheAuthorOfTheBook) {
         this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
     }
+
+    public String getIsbnNumberOfTheBook() {
+        return isbnNumberOfTheBook;
+    }
 }

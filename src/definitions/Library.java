@@ -23,4 +23,8 @@ public class Library {
     public Book[] getAllTheBooksThatAreCurrentlyAvailable() {
         return allTheBooksThatAreCurrentlyAvailable;
     }
+
+    public void setAllTheBooksThatAreCurrentlyAvailable(Book[] allTheBooksThatAreCurrentlyAvailable) {
+        this.allTheBooksThatAreCurrentlyAvailable = allTheBooksThatAreCurrentlyAvailable;
+    }
 }

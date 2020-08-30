@@ -19,4 +19,8 @@ public class Library {
             allTheBooksThatAreCurrentlyAvailable[i] = new Book("Book" + (i + 1), null, 1234567891234l + (i + 1));
         }
     }
+
+    public Book[] getAllTheBooksThatAreCurrentlyAvailable() {
+        return allTheBooksThatAreCurrentlyAvailable;
+    }
 }

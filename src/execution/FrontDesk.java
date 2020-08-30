@@ -7,5 +7,4 @@
 package execution;
 
 public class FrontDesk {
-
 }

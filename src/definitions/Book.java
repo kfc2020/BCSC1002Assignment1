@@ -11,9 +11,9 @@ import java.util.Objects;
 public class Book {
     private String nameOfTheBook;
     private String nameOfTheAuthorOfTheBook;
-    private String isbnNumberOfTheBook;
+    private long isbnNumberOfTheBook;
 
-    public Book(String nameOfTheBook, String nameOfTheAuthorOfTheBook, String isbnNumberOfTheBook) {
+    public Book(String nameOfTheBook, String nameOfTheAuthorOfTheBook, long isbnNumberOfTheBook) {
         this.nameOfTheBook = nameOfTheBook;
         this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
         this.isbnNumberOfTheBook = isbnNumberOfTheBook;
@@ -35,11 +35,11 @@ public class Book {
         this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
     }
 
-    public String getIsbnNumberOfTheBook() {
+    public long getIsbnNumberOfTheBook() {
         return isbnNumberOfTheBook;
     }
 
-    public void setIsbnNumberOfTheBook(String isbnNumberOfTheBook) {
+    public void setIsbnNumberOfTheBook(long isbnNumberOfTheBook) {
         this.isbnNumberOfTheBook = isbnNumberOfTheBook;
     }
 

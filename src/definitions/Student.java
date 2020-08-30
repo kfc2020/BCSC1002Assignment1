@@ -21,4 +21,17 @@ public class Student {
         this.nameOfBooks = nameOfBooks;
         this.numberOfBookIssued = numberOfBookIssued;
     }
+
+    public Student() {
+        this.nameOfBooks = new Book[5];
+    }
+
+    public Book[] getNameOfBooks() {
+        return nameOfBooks;
+    }
+
+    public void setNameOfBooks(Book[] nameOfBooks) {
+        this.nameOfBooks = nameOfBooks;
+    }
+
 }

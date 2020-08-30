@@ -59,6 +59,22 @@ public class Student {
         scanner.nextLine();
     }
 
+    /**
+     * this method helps us to return the book.
+     */
+
+    public void doReturn() {
+        if (numberOfBookIssued == 0) {
+            System.out.println("No book available for return. ");
+        } else {
+            numberOfBookIssued = 0;
+            this.nameOfBooks = new Book[5];
+            System.out.println("Book returned successfully!");
+        }
+        System.out.println("---Press ENTER button for go to FrontDesk.--- ");
+        scanner.nextLine();
+    }
+
     public String getStudentName() {
         return studentName;
     }

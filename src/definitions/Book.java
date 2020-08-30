@@ -28,4 +28,8 @@ public class Book {
     public String getNameOfTheAuthorOfTheBook() {
         return nameOfTheAuthorOfTheBook;
     }
+
+    public void setNameOfTheAuthorOfTheBook(String nameOfTheAuthorOfTheBook) {
+        this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
+    }
 }

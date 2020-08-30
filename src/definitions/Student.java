@@ -75,6 +75,23 @@ public class Student {
         scanner.nextLine();
     }
 
+    /**
+     * This method show a list of all the issued book.
+     */
+
+    public void showIssuesBook() {
+        System.out.println("Student name: " + studentName);
+        System.out.println("University roll no.: " + universityRollNumber);
+        for (int i = 0; i < numberOfBookIssued; i++) {
+            System.out.println(nameOfBooks[i]);
+        }
+        if (numberOfBookIssued == 0) {
+            System.out.println("no any book issued!");
+        }
+        System.out.println("---Press ENTER button for go to FrontDesk.--- ");
+        scanner.nextLine();
+    }
+
     public String getStudentName() {
         return studentName;
     }

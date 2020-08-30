@@ -7,5 +7,13 @@
 package definitions;
 
 public class Book {
-    private String bookName;
+    private String nameOfTheBook;
+    private String nameOfTheAuthorOfTheBook;
+    private String isbnNumberOfTheBook;
+
+    public Book(String nameOfTheBook, String nameOfTheAuthorOfTheBook, String isbnNumberOfTheBook) {
+        this.nameOfTheBook = nameOfTheBook;
+        this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
+        this.isbnNumberOfTheBook = isbnNumberOfTheBook;
+    }
 }

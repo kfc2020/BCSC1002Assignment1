@@ -34,6 +34,31 @@ public class Student {
         this.nameOfBooks = nameOfBooks;
     }
 
+    /**
+     * This method helps us to issue the book.
+     */
+
+    public void doIssue() {
+        if (numberOfBookIssued == 0) {
+            System.out.print("Please enter your name: ");
+            studentName = scanner.nextLine();
+            System.out.print("enter your university number : ");
+            universityRollNumber = scanner.nextInt();
+            scanner.nextLine();
+        }
+        System.out.print("enter book name: ");
+        String bookName = scanner.nextLine();
+        System.out.print("enter the author name of the book: ");
+        String authorName = scanner.nextLine();
+        System.out.print("enter the ISBN number of book which write on the book: ");
+        long ISBNNumber = scanner.nextInt();
+        scanner.nextLine();
+        nameOfBooks[getNumberOfBookIssued()] = new Book(bookName, authorName, ISBNNumber);
+        System.out.println(bookName + " " + "book issued!");
+        System.out.println("---Press ENTER button for go to FrontDesk.--- ");
+        scanner.nextLine();
+    }
+
     public String getStudentName() {
         return studentName;
     }

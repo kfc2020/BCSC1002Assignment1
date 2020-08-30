@@ -12,4 +12,11 @@ public class Library {
     public Library(Book[] allTheBooksThatAreCurrentlyAvailable) {
         this.allTheBooksThatAreCurrentlyAvailable = allTheBooksThatAreCurrentlyAvailable;
     }
+
+    public Library() {
+        this.allTheBooksThatAreCurrentlyAvailable = new Book[10];
+        for (int i = 0; i < allTheBooksThatAreCurrentlyAvailable.length; i++) {
+            allTheBooksThatAreCurrentlyAvailable[i] = new Book("Book" + (i + 1), null, 1234567891234l + (i + 1));
+        }
+    }
 }
